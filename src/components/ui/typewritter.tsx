@@ -6,6 +6,8 @@ export default function TypeWritter() {
         <>
             <TypeAnimation
                 sequence={[
+                    "   ",
+                    1000,
                     "Software Engineer",
                     2200,
                     "Salesforce Certified Developer",
