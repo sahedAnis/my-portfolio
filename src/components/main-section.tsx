@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import avatarImg from '../../public/images/IMG_3962-removebg-preview.png'
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from 'next/link';
+import { MailIcon } from 'lucide-react';
 
 
 const MainSection = () => {
@@ -17,25 +18,36 @@ const MainSection = () => {
                 <TypeWritter />
             </div>
             
-            <div className="absolute bottom-60 md:bottom-10 w-[280px] animate-[slide-down-two_4s_ease-out_forwards]">
+            <div className="absolute bottom-60 md:bottom-10 w-[460px] animate-[slide-down-two_4s_ease-out_forwards]">
                 <p className="text-gray-400 dark:text-gray-200 pb-4 text-center">Get in touch with me</p>
-                <div className="flex justify-between">
-                    <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
+                <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between">
+                    <Link href="mailto:sahedanis2018@gmail.com" passHref legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">
-                                Find me on
-                                <LinkedInLogoIcon className="text-black dark:text-white h-[1.4rem] w-[1.4rem] ml-1"/>
+                                Send me an Email
+                                <MailIcon className="text-black dark:text-white h-[1.4rem] w-[1.4rem] ml-1"/>
                             </Button>
                         </a>
                     </Link>
-                    <Link href="https://github.com/sahedAnis" passHref legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Button>
-                                <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] mr-2" />
-                                My GitHub
-                            </Button>
-                        </a>
-                    </Link>
+                    <div className="h-full flex mt-2 lg:mt-0 w-[270px] lg:w-[273px] justify-between">
+                        <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline">
+                                    Find me on
+                                    <LinkedInLogoIcon className="text-black dark:text-white h-[1.4rem] w-[1.4rem] ml-1"/>
+                                </Button>
+                            </a>
+                        </Link>
+                        <Link href="https://github.com/sahedAnis" passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <Button>
+                                    <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] mr-2" />
+                                    My GitHub
+                                </Button>
+                            </a>
+                        </Link>
+                    </div>
+                    
                 </div>
             </div>
             
