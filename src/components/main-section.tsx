@@ -6,6 +6,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import Link from 'next/link';
 import { MailIcon } from 'lucide-react';
+import FadeInOnScroll from './fade-in-on-scroll';
 
 
 const MainSection = () => {
@@ -52,172 +53,174 @@ const MainSection = () => {
                     </div>
                 </div>
             </div>
-            <section className="w-full md:w-[70%] md:mx-auto h-[1850px] md:h-[1100px] lg:md-[950px] flex flex-col justify-around items-center scroll-smooth">
-                <div className="w-[90%] md:w-[95%] flex flex-col">
-                    <h1 className="font-bold text-[35px] md:text-[50px] item-end self-start border-b">Tech stack</h1>
-                    <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
-                    <div>
-                        <Tabs defaultValue="all" className="w-[100%] mt-10 md:mt-14">
-                            <TabsList className="w-[100%] h-[55px]">
-                                <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[14px]">All</TabsTrigger>
-                                <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[14px]">Software</TabsTrigger>
-                                <TabsTrigger value="ops" className="w-[25%] h-[50px] text-[12px] md:text-[14px]">Ops</TabsTrigger>
-                                <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[14px]">CRM</TabsTrigger>
-                            </TabsList>
-                            <TabsContent value="all">
-                                <div className="w-full h-[500px] mt-4 z-10">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                        <Alert className="flex">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
-                                            <div className="ml-3">
-                                                <AlertTitle className="font-semibold">
-                                                    Typescript
+            <FadeInOnScroll>
+                <section className="w-full md:w-[70%] md:mx-auto h-[1850px] md:h-[950px] lg:md-[950px] flex flex-col justify-around items-center scroll-smooth">
+                    <div className="w-[90%] md:w-[95%] flex flex-col">
+                        <h1 className="font-bold text-[35px] md:text-[50px] item-end self-start border-b">Tech stack</h1>
+                        <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
+                        <div>
+                            <Tabs defaultValue="all" className="w-[100%] mt-10 md:mt-14">
+                                <TabsList className="w-[100%] h-[60px] rounded-[10px] px-2">
+                                    <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">All</TabsTrigger>
+                                    <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">Software</TabsTrigger>
+                                    <TabsTrigger value="ops" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">Ops</TabsTrigger>
+                                    <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">CRM</TabsTrigger>
+                                </TabsList>
+                                <TabsContent value="all">
+                                    <div className="w-full h-[500px] mt-4 z-10">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                            <Alert className="flex">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
+                                                <div className="ml-3">
+                                                    <AlertTitle className="font-semibold">
+                                                        Typescript
+                                                    </AlertTitle>
+                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                </div>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    NextJS
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Spring Boot
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    React
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Python
                                                 </AlertTitle>
                                                 <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                            </div>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                NextJS
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Spring Boot
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                React
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Python
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Php
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Docker
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Kubernetes
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Github Actions
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Apex
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
-                                        </Alert>
-                                    </div>
-                                </div>
-                            </TabsContent>
-                            <TabsContent value="software">
-                                <div className="w-full h-[500px] mt-4 z-10">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                        <Alert className="flex">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
-                                            <div className="ml-3">
-                                                <AlertTitle className="font-semibold">
-                                                    Typescript
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Php
                                                 </AlertTitle>
                                                 <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                            </div>
-                                        </Alert>
-                                        <Alert className="">
-                                            <AlertTitle>
-                                                NextJS
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Spring Boot
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                React
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Python
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Php
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
-                                        </Alert>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Docker
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Kubernetes
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Github Actions
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Apex
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
+                                            </Alert>
+                                        </div>
                                     </div>
-                                </div>
-                            </TabsContent>
-                            <TabsContent value="ops">
-                                <div className="w-full h-[500px] mt-4 z-10">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                        <Alert>
-                                            <AlertTitle>
-                                                Docker
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Kubernetes
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
-                                        </Alert>
-                                        <Alert>
-                                            <AlertTitle>
-                                                Github Actions
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
-                                        </Alert>
+                                </TabsContent>
+                                <TabsContent value="software">
+                                    <div className="w-full h-[500px] mt-4 z-10">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                            <Alert className="flex">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
+                                                <div className="ml-3">
+                                                    <AlertTitle className="font-semibold">
+                                                        Typescript
+                                                    </AlertTitle>
+                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                </div>
+                                            </Alert>
+                                            <Alert className="">
+                                                <AlertTitle>
+                                                    NextJS
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Spring Boot
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    React
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Python
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Php
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                            </Alert>
+                                        </div>
                                     </div>
-                                </div>
-                            </TabsContent>
-                            <TabsContent value="crm">
-                                <div className="w-full h-[500px] mt-4 z-10">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                        <Alert>
-                                            <AlertTitle>
-                                                Apex
-                                            </AlertTitle>
-                                            <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
-                                        </Alert>
+                                </TabsContent>
+                                <TabsContent value="ops">
+                                    <div className="w-full h-[500px] mt-4 z-10">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Docker
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Kubernetes
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
+                                            </Alert>
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Github Actions
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
+                                            </Alert>
+                                        </div>
                                     </div>
-                                </div>
-                            </TabsContent>
-                        </Tabs>
+                                </TabsContent>
+                                <TabsContent value="crm">
+                                    <div className="w-full h-[500px] mt-4 z-10">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                            <Alert>
+                                                <AlertTitle>
+                                                    Apex
+                                                </AlertTitle>
+                                                <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
+                                            </Alert>
+                                        </div>
+                                    </div>
+                                </TabsContent>
+                            </Tabs>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </FadeInOnScroll>  
         </>
         
      );
