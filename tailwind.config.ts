@@ -71,10 +71,35 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "pop-in": {
+          '0%': { transform: 'scale(3)', opacity: '0' },
+          '80%': { transform: 'scale(1.1)', opacity: '0.7' },
+          '100%': { transform: 'scale(1)', opacity: '1'}
+        },
+        "slide-down": {
+          '0%': { transform: 'translateY(-30%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1'}
+        },
+        "slide-down-two": {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '50%': { transform: 'translateY(-40%)', opacity: '0' },
+          '90%': { transform: 'translateY(-10%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1'}
+        },
+        "slide-up": {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '50%': { transform: 'translate(40%)', opacity: '0' },
+          '90%': { transform: 'translate(10%)', oapcity: '0' },
+          '100%': { transform: 'translate(0)', opacity: '1'}
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pop-in": "pop-in 1s ease-out forwards",
+        "slide-down": "slide-down 0.8s ease-out forwards",
+        "slide-down-two": "slide-down-two 0.8s ease-out forwards",
+        "slide-up": "slide-up 0.8s ease-out forwards"
       },
     },
   },
