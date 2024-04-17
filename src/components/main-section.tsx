@@ -15,11 +15,11 @@ const MainSection = () => {
 
     return ( 
         <>
-            <div className="flex flex-col md:justify-center items-center md:mt-0 h-[85vh] md:h-screen md:pb-[65px] ">
+            <div className="flex flex-col md:justify-center items-center mt-[64px] md:mt-0 h-[85vh] md:h-screen md:pb-[65px] ">
 
                 <img src="https://firebasestorage.googleapis.com/v0/b/anis-sahed.appspot.com/o/IMG_3962-removebg-preview.png?alt=media&token=66f302a4-cad9-4844-ba3d-539c1bd0001d" alt="" className="animate-slide-down absolute bottom-0 md:left-[10px] xl:left-[100px] 2xl:left-[150px] w-[230px] h-[230px] md:w-[280px] md:h-[280px] 2xl:h-[380px] 2xl:w-[380px]" />
                 <div className="text-center mt-[120px] md:mt-0 animate-slide-down-two">
-                    <p className="font-normal text-[15px] sm:text-[25px] 2xl:text-[40px]">Hey! Relax.. you just found the right</p>
+                    <p className="font-normal text-[17px] sm:text-[25px] 2xl:text-[40px]">Hey! Relax.. you just found the right</p>
                     <TypeWritter />
                 </div>
                 <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_5s_ease-out_forwards]">
@@ -30,7 +30,7 @@ const MainSection = () => {
                 <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[80px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center scroll-smooth">
                     <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] 2xl:text-[70px] md:text-[50px] item-end self-start border-b">Technologies</h1>
-                        <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
                         <div>
                             <Tabs defaultValue="all" className="w-[100%] mt-10 md:mt-14">
                                 <TabsList className="w-[100%] h-[60px] rounded-[10px] px-2">
@@ -268,7 +268,7 @@ const MainSection = () => {
                 <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
                     <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Contact</h1>
-                        <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">Let&apos;s get in touch!</p>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">Let&apos;s get in touch!</p>
                         <div className="flex flex-col items-center justify-center h-[200px] sm:h-[300px] ">
                             <div className="w-full lg:w-[630px] animate-[slide-down-two_4s_ease-out_forwards]">
                                 <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between">
@@ -304,7 +304,7 @@ const MainSection = () => {
                     </div>
                 </section>
             </FadeInOnScroll>
-            <p className="text-[15px] pb-2 text-gray-400 text-center">Copyright © 2024 Anis SAHED</p>
+            <p className="text-[12px] md:text-[15px] pb-2 text-gray-400 text-center">Copyright © 2024 Anis SAHED</p>
         </>
         
      );
