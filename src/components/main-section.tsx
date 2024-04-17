@@ -15,20 +15,20 @@ const MainSection = () => {
 
     return ( 
         <>
-            <div className="flex flex-col md:justify-center items-center md:mt-0 h-screen  md:pb-[65px]">
+            <div className="flex flex-col md:justify-center items-center md:mt-0 h-[85vh] md:h-screen md:pb-[65px] ">
 
-                <img src="https://firebasestorage.googleapis.com/v0/b/anis-sahed.appspot.com/o/IMG_3962-removebg-preview.png?alt=media&token=d95084b8-9945-4bb7-9ebf-1ce1772acb05" alt="" className="animate-slide-down absolute bottom-0 md:left-[10px] xl:left-[100px] 2xl:left-[150px] w-[230px] h-[230px] md:w-[280px] md:h-[280px] 2xl:h-[380px] 2xl:w-[380px]" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/anis-sahed.appspot.com/o/IMG_3962-removebg-preview.png?alt=media&token=66f302a4-cad9-4844-ba3d-539c1bd0001d" alt="" className="animate-slide-down absolute bottom-0 md:left-[10px] xl:left-[100px] 2xl:left-[150px] w-[230px] h-[230px] md:w-[280px] md:h-[280px] 2xl:h-[380px] 2xl:w-[380px]" />
                 <div className="text-center mt-[120px] md:mt-0 animate-slide-down-two">
                     <p className="font-normal text-[15px] sm:text-[25px] 2xl:text-[40px]">Hey! Relax.. you just found the right</p>
                     <TypeWritter />
                 </div>
-                <div className="absolute bottom-80 md:bottom-10 animate-[slide-down-two_5s_ease-out_forwards]">
+                <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_5s_ease-out_forwards]">
                     <CgMouse className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] animate-bounce"/>
                 </div>
             </div>
             <FadeInOnScroll>
-                <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto h-[890px] md:h-[930px] lg:md-[950px] flex flex-col justify-end items-center scroll-smooth">
-                    <div className="w-[90%] md:w-[95%] flex flex-col">
+                <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[80px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center scroll-smooth">
+                    <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] 2xl:text-[70px] md:text-[50px] item-end self-start border-b">Technologies</h1>
                         <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
                         <div>
@@ -40,7 +40,7 @@ const MainSection = () => {
                                     <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">CRM</TabsTrigger>
                                 </TabsList>
                                 <TabsContent value="all">
-                                    <div className="w-full h-[500px] mt-4 z-10 ">
+                                    <div className="w-full mt-4 z-10 animate-slide-up">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                             <Alert className="flex">
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
@@ -52,7 +52,9 @@ const MainSection = () => {
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
-                                                <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="NextJS logo" className="h-[50px] w-[50px]" />
+                                                <div className="h-[50px] w-[50px] flex flex-col justify-center dark:bg-white rounded-[30px]">
+                                                    <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="NextJS logo" className="" />
+                                                </div>
                                                 <div className="ml-3">
                                                     <AlertTitle>
                                                         NextJS
@@ -119,7 +121,7 @@ const MainSection = () => {
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
-                                                <img src="https://www.svgrepo.com/show/306098/githubactions.svg" alt="GitHub Actions logo" className="h-[50px] w-[50px]" />
+                                                <img src="https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg" alt="GitHub Actions logo" className="h-[50px] w-[50px]" />
                                                 <div className="ml-3">
                                                     <AlertTitle>
                                                     Github Actions
@@ -142,7 +144,7 @@ const MainSection = () => {
                                     </div>
                                 </TabsContent>
                                 <TabsContent value="software">
-                                    <div className="w-full h-[500px] mt-4 z-10">
+                                    <div className="w-full mt-4 z-10 animate-slide-up">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                             <Alert className="flex">
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
@@ -154,7 +156,9 @@ const MainSection = () => {
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
-                                                <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="NextJS logo" className="h-[50px] w-[50px]" />
+                                                <div className="h-[50px] w-[50px] flex flex-col justify-center dark:bg-white rounded-[30px]">
+                                                    <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="NextJS logo" className="" />
+                                                </div>
                                                 <div className="ml-3">
                                                     <AlertTitle>
                                                         NextJS
@@ -206,7 +210,7 @@ const MainSection = () => {
                                     </div>
                                 </TabsContent>
                                 <TabsContent value="ops">
-                                    <div className="w-full h-[500px] mt-4 z-10">
+                                    <div className="w-full mt-4 z-10 animate-slide-up">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                             <Alert className="flex">
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Docker-svgrepo-com.svg" alt="Docker logo" className="h-[50px] w-[50px]" />
@@ -227,7 +231,7 @@ const MainSection = () => {
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
-                                                <img src="https://www.svgrepo.com/show/306098/githubactions.svg" alt="GitHub Actions logo" className="h-[50px] w-[50px]" />
+                                                <img src="https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg" alt="GitHub Actions logo" className="h-[50px] w-[50px]" />
                                                 <div className="ml-3">
                                                     <AlertTitle>
                                                     Github Actions
@@ -239,7 +243,7 @@ const MainSection = () => {
                                     </div>
                                 </TabsContent>
                                 <TabsContent value="crm">
-                                    <div className="w-full h-[500px] mt-4 z-10">
+                                    <div className="w-full mt-4 z-10 animate-slide-up">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                             <Alert className="flex">
                                                 <div className="h-[50px] w-[50px] flex flex-col justify-center">
@@ -261,34 +265,34 @@ const MainSection = () => {
                 </section>
             </FadeInOnScroll>
             <FadeInOnScroll>
-                <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto lg:md-[950px] mt-[600px] md:mt-[130px] md:h-fit flex flex-col justify-around items-center">
-                    <div className="w-[90%] md:w-[95%] flex flex-col">
+                <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
+                    <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Contact</h1>
-                        <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">Let's get in touch!</p>
+                        <p className="text-[13px] md:text-[17px] mt-2 text-gray-400">Let&apos;s get in touch!</p>
                         <div className="flex flex-col items-center justify-center h-[200px] sm:h-[300px] ">
-                            <div className="w-[460px] animate-[slide-down-two_4s_ease-out_forwards] ">
+                            <div className="w-full lg:w-[630px] animate-[slide-down-two_4s_ease-out_forwards]">
                                 <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between">
                                     <Link href="mailto:sahedanis2018@gmail.com" passHref legacyBehavior>
                                         <a target="_blank" rel="noopener noreferrer">
-                                            <Button variant="outline" className="font-normal">
+                                            <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
                                                 Send me an Email
-                                                <MailIcon className="text-black dark:text-white h-[1.4rem] w-[1.4rem] ml-1"/>
+                                                <MailIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
                                             </Button>
                                         </a>
                                     </Link>
-                                    <div className="h-full flex mt-2 lg:mt-0 w-[270px] lg:w-[273px] justify-between">
+                                    <div className="h-full flex mt-2 lg:mt-0 w-[270px] lg:w-[370px] justify-between">
                                         <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Button variant="outline" className="font-normal">
+                                                <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
                                                     Find me on
-                                                    <LinkedInLogoIcon className="text-black dark:text-white h-[1.4rem] w-[1.4rem] ml-1"/>
+                                                    <LinkedInLogoIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
                                                 </Button>
                                             </a>
                                         </Link>
                                         <Link href="https://github.com/sahedAnis" passHref legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Button className="font-normal">
-                                                    <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] mr-2" />
+                                                <Button className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
+                                                    <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] lg:h-[2.0rem] lg:w-[2.0rem] mr-2 lg:mr-2" />
                                                     My GitHub
                                                 </Button>
                                             </a>
@@ -300,7 +304,7 @@ const MainSection = () => {
                     </div>
                 </section>
             </FadeInOnScroll>
-            <p className="text-[12px] pb-2 text-gray-400 text-center">Sahed Anis - 2024, All Rights Reserved</p>
+            <p className="text-[15px] pb-2 text-gray-400 text-center">Copyright © 2024 Anis SAHED</p>
         </>
         
      );
