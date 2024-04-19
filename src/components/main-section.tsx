@@ -4,7 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CgMouse } from "react-icons/cg";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { FaTrophy } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaUserGraduate } from "react-icons/fa";
 import Link from 'next/link';
 import { MailIcon } from 'lucide-react';
 import FadeInOnScroll from './fade-in-on-scroll';
@@ -22,7 +26,7 @@ const MainSection = () => {
                     <p className="font-normal text-[17px] sm:text-[25px] 2xl:text-[40px]">Hey! Relax.. you just found the right</p>
                     <TypeWritter />
                 </div>
-                <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_5s_ease-out_forwards]">
+                <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_4s_ease-out_forwards]">
                     <CgMouse className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] animate-bounce"/>
                 </div>
             </div>
@@ -260,6 +264,57 @@ const MainSection = () => {
                                     </div>
                                 </TabsContent>
                             </Tabs>
+                        </div>
+                    </div>
+                </section>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
+            <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
+                    <div className="w-[90%] md:w-[95%] flex flex-col ">
+                        <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Achievements</h1>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">Things I am proud of!</p>
+                        <div className=" mt-8 pl-4 flex flex-col justify-center">
+                            <div className="flex items-center">
+                                <div className="relative flex flex-col items-center">
+                                    <div className="dark:bg-gray-700 bg-gray-200 rounded-[100%] h-[55px] w-[55px] flex justify-center items-center">
+                                        <FaTrophy className="text-[25px] dark:text-gray-300 " />
+                                    </div>
+                                    <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
+                                </div>
+                                <p className="ml-6 md:text-[25px] text-[16px]">2019 Campus France Excellence Scholar</p>
+                            </div>
+                        </div>
+                        <div className=" mt-10 pl-4 flex flex-col justify-center">
+                            <div className="flex items-center">
+                                <div className="relative flex flex-col items-center">
+                                    <div className="dark:bg-gray-700 bg-gray-200 rounded-[100%] h-[55px] w-[55px] flex justify-center items-center">
+                                        <FaUserDoctor className="text-[25px] dark:text-gray-300" />
+                                    </div>
+                                    <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
+                                </div>
+                                <p className="ml-6 md:text-[25px] text-[16px]">One year as a general medical student</p>
+                            </div>
+                        </div>
+                        <div className=" mt-10 pl-4 flex flex-col justify-center">
+                            <div className="flex items-center">
+                                <div className="relative flex flex-col items-center">
+                                    <div className="dark:bg-gray-700 bg-gray-200 rounded-[100%] h-[55px] w-[55px] flex justify-center items-center">
+                                        <FaUserGraduate className="text-[25px] dark:text-gray-300 " />
+                                    </div>
+                                    <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
+                                </div>
+                                <p className="ml-6 md:text-[25px] text-[16px]">(Soon) Computer Science Master's degree graduate</p>
+                            </div>
+                        </div>
+                        <div className=" mt-10 pl-4 flex flex-col justify-center">
+                            <div className="flex items-center">
+                                <div className="relative flex flex-col items-center">
+                                    <div className="dark:bg-gray-700 bg-gray-200 rounded-[100%] h-[55px] w-[55px] flex justify-center items-center">
+                                        <FaLaptopCode className="text-[25px] dark:text-gray-300 " />
+                                    </div>
+                                </div>
+                                <p className="ml-6 md:text-[25px] text-[16px]">Built my webiste with NextJS, ShadcnUI & Framer Motion</p>
+                            </div>
                         </div>
                     </div>
                 </section>
