@@ -303,7 +303,7 @@ const MainSection = () => {
                                     </div>
                                     <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
                                 </div>
-                                <p className="ml-6 md:text-[25px] text-[16px]">(Soon) Computer Science Master's degree graduate</p>
+                                <p className="ml-6 md:text-[25px] text-[16px]">(Soon) Computer Science Master&apos;s degree graduate</p>
                             </div>
                         </div>
                         <div className=" mt-10 pl-4 flex flex-col justify-center">
