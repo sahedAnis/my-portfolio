@@ -1,0 +1,20 @@
+{
+    "Navbar": {
+      "title": "Anis Sahed's portfolio"
+    },
+    "MainSection": {
+        "textOne": "Hey! Relax.. you just found the right",
+        "softwareEng": "Software Engineer",
+        "fullStackDev": "Full-stack Developer",
+        "ninja": "Software architecture ninja",
+        "ops": "DevOps advocate",
+        "sf": "Salesforce Certified Developer",
+        "cc": "Clean coder",
+        "al": "APIs lover",
+        "cr": "Code reviewer",
+        "u": "UX/UI enthusiat",
+        "ap": "Agile practionner",
+        "qsg": "Quality assurance guardian",
+        "fa": "Football aficionado"
+    }
+}

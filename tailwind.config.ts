@@ -87,10 +87,8 @@ const config = {
           '100%': { transform: 'translateY(0)', opacity: '1'}
         },
         "slide-up": {
-          '0%': { transform: 'translateY(100%)', opacity: '0' },
-          '50%': { transform: 'translate(40%)', opacity: '0' },
-          '90%': { transform: 'translate(10%)', oapcity: '0' },
-          '100%': { transform: 'translate(0)', opacity: '1'}
+          '0%': { transform: 'translateY(2%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1'}
         }
       },
       animation: {
@@ -99,7 +97,7 @@ const config = {
         "pop-in": "pop-in 1s ease-out forwards",
         "slide-down": "slide-down 0.8s ease-out forwards",
         "slide-down-two": "slide-down-two 0.8s ease-out forwards",
-        "slide-up": "slide-up 0.8s ease-out forwards"
+        "slide-up": "slide-up 0.2s ease-out forwards"
       },
     },
   },

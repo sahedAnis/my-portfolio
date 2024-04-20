@@ -1,7 +1,10 @@
 "use client"
 import { TypeAnimation } from "react-type-animation"
+import { useTranslations } from 'next-intl';
 
 export default function TypeWritter() {
+
+    
     return (
         <>
             <TypeAnimation
@@ -10,13 +13,13 @@ export default function TypeWritter() {
                     1000,
                     "Software Engineer",
                     2200,
-                    "Salesforce Certified Developer",
-                    2800,
                     "Full-stack Developer",
                     2800,
                     "Software architecture ninja",
                     3000,
                     "DevOps advocate",
+                    2800,
+                    "Salesforce Certified Developer",
                     2800,
                     "Clean coder",
                     2300,

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import TypeWritter from './ui/typewritter';
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -12,18 +13,21 @@ import { FaUserGraduate } from "react-icons/fa";
 import Link from 'next/link';
 import { MailIcon } from 'lucide-react';
 import FadeInOnScroll from './fade-in-on-scroll';
+import { useTranslations } from 'next-intl';
+
 
 
 const MainSection = () => {
-    
 
+    const t = useTranslations('MainSection');
+    
     return ( 
         <>
             <div className="flex flex-col md:justify-center items-center mt-[64px] md:mt-0 h-[85vh] md:h-screen md:pb-[65px] ">
 
                 <img src="https://firebasestorage.googleapis.com/v0/b/anis-sahed.appspot.com/o/IMG_3962-removebg-preview.png?alt=media&token=66f302a4-cad9-4844-ba3d-539c1bd0001d" alt="" className="animate-slide-down absolute bottom-0 md:left-[10px] xl:left-[100px] 2xl:left-[150px] w-[230px] h-[230px] md:w-[280px] md:h-[280px] 2xl:h-[380px] 2xl:w-[380px]" />
                 <div className="text-center mt-[120px] md:mt-0 animate-slide-down-two">
-                    <p className="font-normal text-[17px] sm:text-[25px] 2xl:text-[40px]">Hey! Relax.. you just found the right</p>
+                    <p className="font-normal text-[17px] sm:text-[25px] 2xl:text-[40px]">{t('textOne')}</p>
                     <TypeWritter />
                 </div>
                 <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_4s_ease-out_forwards]">
