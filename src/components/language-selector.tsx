@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
 
-export default function LanguageToggle() {
+export default function LanguageSelector() {
 
     const [currentLanguage, setCurrentLanguage] = useState('en');
     let [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
@@ -27,13 +27,13 @@ export default function LanguageToggle() {
 
     return (
         <>
-            <div className="flex items-center justify-between w-[100px] md:w-[110px] ">
+            <div className="flex items-center justify-between w-[50px] ">
                 
-                <select defaultValue={localActive} onChange={onSelectChange} disabled={isPending} className="h-[30px] w-[40px] px-1">
-                    <option value="en">
-                        🇺🇸
+                <select defaultValue={localActive} onChange={onSelectChange} disabled={isPending} className="h-[30px]  px-1 text-[22px] bg-background">
+                    <option value="en" className="text-[22px]">
+                        🇬🇧
                     </option>
-                    <option value="fr">
+                    <option value="fr" className="text-[22px]">
                         🇫🇷
                     </option>
                 </select>

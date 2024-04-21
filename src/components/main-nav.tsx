@@ -1,6 +1,6 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { useTranslations } from 'next-intl';
-import LanguageToggle from "./language-toggle";
+import LanguageSelector from "./language-selector";
 
 
 const MainNav = () => {
@@ -12,8 +12,8 @@ const MainNav = () => {
         <div className="h-[65px] w-screen fixed top-0 border-b-[1px] backdrop-blur-lg border-zinc-200 dark:border-zinc-800 z-[200]">
             <div className="w-[95%] sm:w-[70%] h-full mx-auto flex items-center justify-between">
                 <p>feat: <span className="font-bold">{t('title')}</span></p>
-                <div className="flex items-center w-[150px] md:w-[70px] justify-between">
-                    <LanguageToggle />
+                <div className="flex  justify-between items-center" >
+                    <LanguageSelector />
                     <ModeToggle />
                 </div>
             </div>
