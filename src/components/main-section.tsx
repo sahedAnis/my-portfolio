@@ -20,6 +20,9 @@ import { useTranslations } from 'next-intl';
 const MainSection = () => {
 
     const t = useTranslations('MainSection');
+    const techs = useTranslations('Technologies');
+    const achvts = useTranslations('Achievements');
+    const contact = useTranslations('Contact');
     
     return ( 
         <>
@@ -28,7 +31,34 @@ const MainSection = () => {
                 <img src="https://firebasestorage.googleapis.com/v0/b/anis-sahed.appspot.com/o/IMG_3962-removebg-preview.png?alt=media&token=66f302a4-cad9-4844-ba3d-539c1bd0001d" alt="" className="animate-slide-down absolute bottom-0 md:left-[10px] xl:left-[100px] 2xl:left-[150px] w-[230px] h-[230px] md:w-[280px] md:h-[280px] 2xl:h-[380px] 2xl:w-[380px]" />
                 <div className="text-center mt-[120px] md:mt-0 animate-slide-down-two">
                     <p className="font-normal text-[17px] sm:text-[25px] 2xl:text-[40px]">{t('textOne')}</p>
-                    <TypeWritter />
+                    <TypeWritter sequence={[
+                        "   ",
+                        1000,
+                        t('softwareEng'),
+                        2200,
+                        t('fullStackDev'),
+                        2800,
+                        t('ninja'),
+                        3000,
+                        t('ops'),
+                        2800,
+                        t('sf'),
+                        2800,
+                        t('cc'),
+                        2300,
+                        t('al'),
+                        2300,
+                        t('cr'),
+                        2500,
+                        t('u'),
+                        2600,
+                        t('ap'),
+                        2600,
+                        t('qsg'),
+                        3000,
+                        t('fa'),
+                        2500
+                    ]}/>
                 </div>
                 <div className="absolute bottom-60 md:bottom-10 animate-[slide-down-two_4s_ease-out_forwards]">
                     <CgMouse className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] animate-bounce"/>
@@ -38,12 +68,12 @@ const MainSection = () => {
                 <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[80px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center scroll-smooth">
                     <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] 2xl:text-[70px] md:text-[50px] item-end self-start border-b">Technologies</h1>
-                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">List of my favorite technologies and tools I use everyday.</p>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">{techs('phrase')}</p>
                         <div>
                             <Tabs defaultValue="all" className="w-[100%] mt-10 md:mt-14">
                                 <TabsList className="w-[100%] h-[60px] rounded-[10px] px-2">
-                                    <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">All</TabsTrigger>
-                                    <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">Software</TabsTrigger>
+                                    <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">{techs('all')}</TabsTrigger>
+                                    <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">{techs('software')}</TabsTrigger>
                                     <TabsTrigger value="ops" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">Ops</TabsTrigger>
                                     <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">CRM</TabsTrigger>
                                 </TabsList>
@@ -56,7 +86,7 @@ const MainSection = () => {
                                                     <AlertTitle className="font-semibold">
                                                         Typescript
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -67,7 +97,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         NextJS
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('rf')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -76,7 +106,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Spring Boot
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('jf')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -85,7 +115,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         React
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('jl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -96,7 +126,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Python
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>  
                                             </Alert>
                                             <Alert className="flex">
@@ -107,7 +137,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Php
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -116,7 +146,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Docker
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('ct')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -125,7 +155,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Kubernetes
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('cot')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -134,7 +164,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                     Github Actions
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('cit')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -145,7 +175,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Apex
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('sfl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                         </div>
@@ -160,7 +190,7 @@ const MainSection = () => {
                                                     <AlertTitle className="font-semibold">
                                                         Typescript
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -171,7 +201,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         NextJS
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">React framework</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('rf')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -180,7 +210,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Spring Boot
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Java Framework</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('jf')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -189,7 +219,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         React
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">JavaScript library</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('jl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -200,7 +230,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Python
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>  
                                             </Alert>
                                             <Alert className="flex">
@@ -211,7 +241,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Php
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Programming Language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                         </div>
@@ -226,7 +256,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Docker
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Containerization tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('ct')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -235,7 +265,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Kubernetes
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Container orchestration tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('cot')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                             <Alert className="flex">
@@ -244,7 +274,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                     Github Actions
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Continuous integration tool</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('cit')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                         </div>
@@ -261,7 +291,7 @@ const MainSection = () => {
                                                     <AlertTitle>
                                                         Apex
                                                     </AlertTitle>
-                                                    <AlertDescription className="text-gray-400 mt-1">Salesforce programming language</AlertDescription>
+                                                    <AlertDescription className="text-gray-400 mt-1">{techs('sfl')}</AlertDescription>
                                                 </div>
                                             </Alert>
                                         </div>
@@ -275,8 +305,8 @@ const MainSection = () => {
             <FadeInOnScroll>
             <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
                     <div className="w-[90%] md:w-[95%] flex flex-col ">
-                        <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Achievements</h1>
-                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">Things I am proud of!</p>
+                        <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">{achvts('title')}</h1>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">{achvts('phrase')}</p>
                         <div className=" mt-8 pl-4 flex flex-col justify-center">
                             <div className="flex items-center">
                                 <div className="relative flex flex-col items-center">
@@ -285,7 +315,7 @@ const MainSection = () => {
                                     </div>
                                     <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
                                 </div>
-                                <p className="ml-6 md:text-[25px] text-[16px]">2019 Campus France Excellence Scholar</p>
+                                <p className="ml-6 md:text-[25px] text-[16px]">{achvts('cf')}</p>
                             </div>
                         </div>
                         <div className=" mt-10 pl-4 flex flex-col justify-center">
@@ -296,7 +326,7 @@ const MainSection = () => {
                                     </div>
                                     <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
                                 </div>
-                                <p className="ml-6 md:text-[25px] text-[16px]">One year as a general medical student</p>
+                                <p className="ml-6 md:text-[25px] text-[16px]">{achvts('ms')}</p>
                             </div>
                         </div>
                         <div className=" mt-10 pl-4 flex flex-col justify-center">
@@ -307,7 +337,7 @@ const MainSection = () => {
                                     </div>
                                     <div className="absolute w-[2px] h-[32px] bottom-[-36px] dark:bg-gray-700 bg-gray-200"></div>
                                 </div>
-                                <p className="ml-6 md:text-[25px] text-[16px]">(Soon) Computer Science Master&apos;s degree graduate</p>
+                                <p className="ml-6 md:text-[25px] text-[16px]">{achvts('md')}</p>
                             </div>
                         </div>
                         <div className=" mt-10 pl-4 flex flex-col justify-center">
@@ -317,7 +347,7 @@ const MainSection = () => {
                                         <FaLaptopCode className="text-[25px] dark:text-gray-300 " />
                                     </div>
                                 </div>
-                                <p className="ml-6 md:text-[25px] text-[16px]">Built my webiste with NextJS, ShadcnUI & Framer Motion</p>
+                                <p className="ml-6 md:text-[25px] text-[16px]">{achvts('ws')}</p>
                             </div>
                         </div>
                     </div>
@@ -327,23 +357,23 @@ const MainSection = () => {
                 <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
                     <div className="w-[90%] md:w-[95%] flex flex-col ">
                         <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Contact</h1>
-                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">Let&apos;s get in touch!</p>
+                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">{contact('phrase')}</p>
                         <div className="flex flex-col items-center justify-center h-[200px] sm:h-[300px] ">
                             <div className="w-full lg:w-[630px] animate-[slide-down-two_4s_ease-out_forwards]">
                                 <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between">
                                     <Link href="mailto:sahedanis2018@gmail.com" passHref legacyBehavior>
                                         <a target="_blank" rel="noopener noreferrer">
                                             <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
-                                                Send me an Email
+                                                {contact('email')}
                                                 <MailIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
                                             </Button>
                                         </a>
                                     </Link>
-                                    <div className="h-full flex mt-2 lg:mt-0 w-[270px] lg:w-[370px] justify-between">
+                                    <div className={`h-full flex mt-2 lg:mt-0 w-[${contact('width')}] lg:w-[370px] justify-between`}>
                                         <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
                                                 <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
-                                                    Find me on
+                                                    {contact('linkedin')}
                                                     <LinkedInLogoIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
                                                 </Button>
                                             </a>
@@ -352,7 +382,7 @@ const MainSection = () => {
                                             <a target="_blank" rel="noopener noreferrer">
                                                 <Button className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
                                                     <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] lg:h-[2.0rem] lg:w-[2.0rem] mr-2 lg:mr-2" />
-                                                    My GitHub
+                                                    {contact('github')}
                                                 </Button>
                                             </a>
                                         </Link>

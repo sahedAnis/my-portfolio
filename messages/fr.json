@@ -16,5 +16,34 @@
         "ap": "Praticien Agile",
         "qsg": "Gardien de l'assurance qualité",
         "fa": "Passionné de football"
+    },
+    "Technologies": {
+      "phrase": "Liste de mes technologies et outils préférés que j'utilise au quotidien.",
+      "all": "Tout",
+      "software": "Développement",
+      "pl": "Langage de programmation",
+      "rf": "Framework React",
+      "jf": "Framework Java",
+      "jl": "Librairie JavaScript",
+      "ct": "Outil de conteneurisation",
+      "cot": "Outil d'orchestration de conteneurs",
+      "cit": "Outil d'intégration continue",
+      "sfl": "Langage de programmation Salesforce"
+    },
+    "Achievements" : {
+      "title" : "Réalisations",
+      "phrase" : "Accomplissements dont je suis fier !",
+      "cf" : "Boursier d'excellence Campus France 2019",
+      "ms" : "Un an en tant qu'étudiant en médecine générale",
+      "md" : "(Bientôt) Diplômé d'un master en informatique",
+      "ws" : "Création de mon site web avec NextJS, ShadcnUI et Framer Motion"
+    },
+    "Contact" : {
+      "title" : "Contact",
+      "phrase" : "Prenons contact !",
+      "email" : "Envoyez-moi un Email",
+      "linkedin" : "Retrouvez-moi sur",
+      "github" : "Mon GitHub",
+      "width": "300px"
     }
 }
