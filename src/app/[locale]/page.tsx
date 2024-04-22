@@ -1,3 +1,5 @@
+"use client";
+
 import MainNav from "@/components/main-nav";
 import MainSection from "@/components/main-section";
 

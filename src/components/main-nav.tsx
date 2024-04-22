@@ -1,3 +1,5 @@
+'use client'
+
 import { ModeToggle } from "@/components/mode-toggle";
 import { useTranslations } from 'next-intl';
 import LanguageSelector from "./language-selector";

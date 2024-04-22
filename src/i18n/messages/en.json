@@ -1,0 +1,49 @@
+{
+    "Navbar": {
+      "title": "Anis Sahed's portfolio"
+    },
+    "MainSection": {
+        "textOne": "Hey! Relax.. you just found the right",
+        "softwareEng": "Software Engineer",
+        "fullStackDev": "Full-stack Developer",
+        "ninja": "Software architecture ninja",
+        "ops": "DevOps advocate",
+        "sf": "Salesforce Certified Developer",
+        "cc": "Clean coder",
+        "al": "APIs lover",
+        "cr": "Code reviewer",
+        "u": "UX/UI enthusiat",
+        "ap": "Agile practionner",
+        "qsg": "Quality assurance guardian",
+        "fa": "Football aficionado"
+    },
+    "Technologies": {
+      "phrase": "List of my favorite technologies and tools I use everyday.",
+      "all": "All",
+      "software": "Software",
+      "pl": "Programming Language",
+      "rf": "React framework",
+      "jf": "Java Framework",
+      "jl": "JavaScript library",
+      "ct": "Containerization tool",
+      "cot": "Container orchestration tool",
+      "cit": "Continuous integration tool",
+      "sfl": "Salesforce programming language"
+    },
+    "Achievements": {
+      "title": "Achievements",
+      "phrase": "Things I am proud of!",
+      "cf": "2019 Campus France Excellence Scholar",
+      "ms": "One year as a general medical student",
+      "md": "(Soon) Computer Science Master's degree graduate",
+      "ws": "Built my webiste with NextJS, ShadcnUI & Framer Motion"
+    },
+    "Contact": {
+      "title": "Contact",
+      "phrase": "Let's get in touch!",
+      "email": "Send me an Email",
+      "linkedin": "Find me on",
+      "github": "My GitHub",
+      "width": "270px"
+    }
+}
