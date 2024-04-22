@@ -1,7 +1,13 @@
 'use client'
 
-import ReactCountryFlag from "react-country-flag"
-import { Switch } from "./ui/switch";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+  } from "@/components/ui/select"
+  
 import { useState, useTransition, ChangeEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
@@ -16,9 +22,8 @@ export default function LanguageSelector() {
     const router = useRouter();
     const localActive = useLocale();
 
-    const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        console.log(e.target.value);
-        const nextLocale = e.target.value;
+    const onSelectChange = (e: string) => {
+        const nextLocale = e;
         startTransition(() => {
             router.replace(`/${nextLocale}`);
         })
@@ -27,16 +32,17 @@ export default function LanguageSelector() {
 
     return (
         <>
-            <div className="flex items-center justify-between w-[50px] ">
+            <div className="flex items-center justify-between w-[50px]">
                 
-                <select defaultValue={localActive} onChange={onSelectChange} disabled={isPending} className="h-[30px]  px-1 text-[22px] bg-background">
-                    <option value="en" className="text-[22px]">
-                        🇬🇧
-                    </option>
-                    <option value="fr" className="text-[22px]">
-                        🇫🇷
-                    </option>
-                </select>
+                <Select defaultValue={localActive} onValueChange={onSelectChange} disabled={isPending}>
+                    <SelectTrigger className="h-[38px] px-1 text-[22px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-accent hover:text-accent-foreground bg-transparent border-0 rounded-md">
+                        <SelectValue placeholder={localActive} />
+                    </SelectTrigger>
+                    <SelectContent className="z-[100]">
+                        <SelectItem value="en" className="text-[23px] md:text-[25px]">🇬🇧</SelectItem>
+                        <SelectItem value="fr" className="text-[23px] md:text-[25px]">🇫🇷</SelectItem>
+                    </SelectContent>
+                </Select>
             </div>
         </>
     )
