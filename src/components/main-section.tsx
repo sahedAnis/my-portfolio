@@ -44,14 +44,14 @@ const MainSection = () => {
                         2800,
                         t('sf'),
                         2800,
-                        t('cc'),
-                        2300,
                         t('al'),
                         2300,
                         t('cr'),
                         2500,
                         t('u'),
                         2600,
+                        t('cc'),
+                        2300,
                         t('ap'),
                         2600,
                         t('qsg'),
@@ -72,10 +72,10 @@ const MainSection = () => {
                         <div>
                             <Tabs defaultValue="all" className="w-[100%] mt-10 md:mt-14">
                                 <TabsList className="w-[100%] h-[60px] rounded-[10px] px-2">
-                                    <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">{techs('all')}</TabsTrigger>
-                                    <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">{techs('software')}</TabsTrigger>
-                                    <TabsTrigger value="ops" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">Ops</TabsTrigger>
-                                    <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[14px] rounded-[10px]">CRM</TabsTrigger>
+                                    <TabsTrigger value="all" className="w-[25%] h-[50px] text-[12px] md:text-[16px] lg:text-[18px] rounded-[10px]">{techs('all')}</TabsTrigger>
+                                    <TabsTrigger value="software" className="w-[25%] h-[50px] text-[12px] md:text-[16px] lg:text-[18px] rounded-[10px]">{techs('software')}</TabsTrigger>
+                                    <TabsTrigger value="ops" className="w-[25%] h-[50px] text-[12px] md:text-[16px] lg:text-[18px] rounded-[10px]">Ops</TabsTrigger>
+                                    <TabsTrigger value="crm" className="w-[25%] h-[50px] text-[12px] md:text-[16px] lg:text-[18px] rounded-[10px]">CRM</TabsTrigger>
                                 </TabsList>
                                 <TabsContent value="all">
                                     <div className="w-full mt-4 z-10 animate-slide-up">
@@ -83,7 +83,7 @@ const MainSection = () => {
                                             <Alert className="flex">
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo" className="h-[50px] w-[50px]"/>
                                                 <div className="ml-3">
-                                                    <AlertTitle className="font-semibold">
+                                                    <AlertTitle>
                                                         Typescript
                                                     </AlertTitle>
                                                     <AlertDescription className="text-gray-400 mt-1">{techs('pl')}</AlertDescription>
