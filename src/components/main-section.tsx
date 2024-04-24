@@ -352,48 +352,33 @@ const MainSection = () => {
                         </div>
                     </div>
                 </section>
-            </FadeInOnScroll>
-            <FadeInOnScroll>
-                <section className="w-full md:w-[80%] 2xl:w-[60%] md:mx-auto md:h-fit mt-[100px] md:mt-[120px] 2xl:mt-[200px] flex flex-col justify-end items-center">
-                    <div className="w-[90%] md:w-[95%] flex flex-col ">
-                        <h1 className="font-bold text-[35px] md:text-[50px] 2xl:text-[70px] item-end self-start border-b">Contact</h1>
-                        <p className="text-[17px] md:text-[17px] mt-2 text-gray-400">{contact('phrase')}</p>
-                        <div className="flex flex-col items-center justify-center h-[200px] sm:h-[300px] ">
-                            <div className="w-full lg:w-[630px] animate-[slide-down-two_4s_ease-out_forwards]">
-                                <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between">
-                                    <Link href="mailto:sahedanis2018@gmail.com" passHref legacyBehavior>
-                                        <a target="_blank" rel="noopener noreferrer">
-                                            <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
-                                                {contact('email')}
-                                                <MailIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
-                                            </Button>
-                                        </a>
-                                    </Link>
-                                    <div className={`h-full flex mt-2 lg:mt-0 w-[${contact('width')}] lg:w-[370px] justify-between`}>
-                                        <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
-                                            <a target="_blank" rel="noopener noreferrer">
-                                                <Button variant="outline" className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
-                                                    {contact('linkedin')}
-                                                    <LinkedInLogoIcon className="text-black dark:text-white lg:h-[2.0rem] lg:w-[2.0rem] h-[1.4rem] w-[1.4rem] ml-1 lg:ml-2"/>
-                                                </Button>
-                                            </a>
-                                        </Link>
-                                        <Link href="https://github.com/sahedAnis" passHref legacyBehavior>
-                                            <a target="_blank" rel="noopener noreferrer">
-                                                <Button className="font-normal lg:text-[20px] md:py-8 lg:rounded-[10px]">
-                                                    <GitHubLogoIcon className="text-white dark:text-black h-[1.2rem] w-[1.2rem] lg:h-[2.0rem] lg:w-[2.0rem] mr-2 lg:mr-2" />
-                                                    {contact('github')}
-                                                </Button>
-                                            </a>
-                                        </Link>
-                                    </div>
+                <div className="md:relative w-full md:w-[75%] 2xl:w-[56%] md:mx-auto md:h-fit md:flex items-center justify-between mt-16">
+                    <div className="md:absolute md:right-10 flex w-[140px] mx-auto justify-between ">
+                        <Link href="mailto:sahedanis2018@gmail.com" passHref legacyBehavior className="">
+                            <a target="_blank" rel="noopener noreferrer">
+                                <div className="px-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-accent hover:text-accent-foreground bg-transparent border-0 rounded-[100%]">
+                                    <MailIcon className="text-black dark:text-white lg:h-[1.2rem] lg:w-[1.2rem] h-[1.2rem] w-[1.2rem] "/>       
                                 </div>
-                            </div>
-                        </div>
+                            </a>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/anis-sahed-07880418b/" passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <div className="px-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-accent hover:text-accent-foreground bg-transparent border-0 rounded-[100%]">
+                                    <LinkedInLogoIcon className="text-black dark:text-white lg:h-[1.2rem] lg:w-[1.2rem] h-[1.2rem] w-[1.2rem]" />
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href="https://github.com/sahedAnis" passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <div className="px-3 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-accent hover:text-accent-foreground bg-transparent border-0 rounded-[100%]">
+                                    <GitHubLogoIcon className="text-black dark:text-white lg:h-[1.2rem] lg:w-[1.2rem] h-[1.2rem] w-[1.2rem]" />
+                                </div>
+                            </a>
+                        </Link>
                     </div>
-                </section>
+                    <p className="text-[12px] md:text-[15px] pb-2 text-gray-400 text-center md:mt-0 mt-4">Copyright © 2024 Anis SAHED</p>
+                </div>
             </FadeInOnScroll>
-            <p className="text-[12px] md:text-[15px] pb-2 text-gray-400 text-center">Copyright © 2024 Anis SAHED</p>
         </>
         
      );
